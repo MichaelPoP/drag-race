@@ -1,43 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>TRAGGER</title>
-  <style type="text/css">
-    /*********  FOR ALL ************/
+/*********  FOR ALL ************/
 
 .position {
     margin: 0 auto;
 }
 
 .pops {
-  position: absolute;
+	position: absolute;
 }
 body {
-  background-image: url("../images/tronBack.jpg");
-}
-#engine {
-color: transparent;
-display: inline-block;
-
-}
-#engine.on {
-  border-radius: 30px;
-  background: rgba(24, 184, 61, .7);
-  width: 70px;
-  height: 20px;
-  color: white;
-  text-align: center;
-  font-variant: small-caps;
-  font-size: 15px;
-  line-height: 25px;
-  box-shadow: 2px 2px 12px 2px #18B83D, -2px -2px 12px 2px #18B83D;
-  display: inline-block;
-}
-p {
-  font-family: monospace;
-  color: white;
-  font-variant: small-caps;
+	background-image: url("../images/tronBack.jpg");
 }
 
 
@@ -51,56 +22,55 @@ p {
   background:rgba(2, 15, 33, .7);
   color: white;
   text-align: center;
-  font-size: 2.2em;
+
+  font-size: 2.5em;
   border: 12px double rgba(19, 26, 33, .7);
   border-style: groove;
 }
-.plights {
-  border-bottom: 7px solid #0E453C;
-  border-top: 7px double #0C353F;
-}
+
 .lights {
   border-bottom: 7px solid #0E453C;
   border-top: 7px double #0C353F;
 }
-.plights div, .lights div  {
+
+.lights div {
   display: inline-block;
   background: rgba(19, 26, 33, .9);
 }
 /**** OFF STATE ******/
 #preLights div  {
   width: 25px;
-  height: 22px;
+  height: 25px;
   border-radius: 9px;
   background: rgba(10, 15, 17);
   border: 2px solid black;
   border-style: groove;
   color: black;
-  font-size: 33px;
+  font-size: 36px;
   vertical-align: middle;
-  line-height: 27px;
+  line-height: 33px;
   letter-spacing: -0.9px;
   background: #FF001E;
   box-shadow: 2px 2px 12px 3px #FF001E, -2px -2px 12px 3px #FF001E;
   }
 span {
-  text-shadow: 0 0 3px #9EB0CE, 0 0 5px #E3EAE6;
-  font-variant: small-caps;
+	text-shadow: 0 0 3px #9EB0CE, 0 0 5px #E3EAE6;
+	font-variant: small-caps;
 }
 #stageLights div {
   width: 25px;
-  height: 22px;
+  height: 25px;
   border-radius: 9px;
   border: 2px solid black;
-  font-size: 33px;
+  font-size: 36px;
   color: black;
   font-weight: lighter;
   vertical-align: middle;
-  line-height: 27px;
+  line-height: 33px;
   letter-spacing: -0.9px;
   background: #07211D;
 }
-#startLights div, #startLights1 div, #startLights2 div, #startLights3 div, #startLights4 div {
+#startLights div {
   width: 42px;
   height: 27px;
   vertical-align: middle;
@@ -111,6 +81,52 @@ span {
   margin-bottom: 7px;
   
 }
+#startLights1 div {
+  width: 42px;
+  height: 27px;
+  vertical-align: middle;
+  background: rgba(19, 26, 33, .9);
+  border-radius: 25px;
+  border:2px dotted rgba(13, 66, 66, .9);
+  border-style: inset;
+  margin-bottom: 7px;
+  
+}
+#startLights2 div {
+  width: 42px;
+  height: 27px;
+  vertical-align: middle;
+  background: rgba(19, 26, 33, .9);
+  border-radius: 25px;
+  border:2px dotted rgba(13, 66, 66, .9);
+  border-style: inset;
+  margin-bottom: 7px;
+  
+}
+#startLights3 div {
+  width: 42px;
+  height: 27px;
+  vertical-align: middle;
+  background: rgba(19, 26, 33, .9);
+  border-radius: 25px;
+  border:2px dotted rgba(13, 66, 66, .9);
+  border-style: inset;
+  margin-bottom: 7px;
+  
+}
+
+#startLights4 div {
+  width: 42px;
+  height: 27px;
+  vertical-align: middle;
+  background: rgba(19, 26, 33, .9);
+  border-radius: 25px;
+  border:2px dotted rgba(13, 66, 66, .9);
+  border-style: inset;
+  margin-bottom: 7px;
+  
+}
+
 /*********   ON STATE   **********/
 #preLights.on div {
   background: #FF001E;
@@ -125,15 +141,15 @@ span {
 
 #stageLights.on div {
   width: 25px;
-  height: 22px;
+  height: 25px;
   border-radius: 9px;
   border: 2px solid black;
   text-shadow: 0 0 3px #9EB0CE, 0 0 5px #E3EAE6;
-  font-size: 33px;
+  font-size: 36px;
   color: black;
   font-weight: lighter;
   vertical-align: middle;
-  line-height: 27px;
+  line-height: 33px;
   letter-spacing: -0.9px;
   box-shadow: 2px 2px 12px 3px #BADA55, -2px -2px 12px 3px #BADA55;
   background: #FFFF00;
@@ -225,11 +241,11 @@ span {
 
 }
 #container {
-  position:center;
-  background: black;
-  height: 700px;
-  width: 820px;
-  border:1px solid black;
+	position:center;
+	background: black;
+	height: 700px;
+	width: 820px;
+	border:1px solid black;
 }
 #finish {
   float: right;
@@ -237,58 +253,16 @@ span {
   right: -720px;
   background: #FFFFFF;
 }
-</style>
-</head>
 
 
-<body>
-<p> Instructions: SPACE = Turn on Engine: RIGHT + LEFT ARROW = GO! </p>  
-  <div id="xtree" class="center">
-      <span>pre-stage</span>
-      <div id="preLights" class="plights">
-        <div>||||</div><div>||||</div><div>||||</div>
-        <div>||||</div><div>||||</div><div>||||</div>
-      </div>
-      <span>stage</span>
-      <div id="stageLights" class="lights">
-        <div>||||</div><div>||||</div><div>||||</div>
-        <div>||||</div><div>||||</div><div>||||</div>
-      </div>
-      <div id="startLights" class="lights">
-        <div></div>
-        <div></div>
-      </div>
-      <div id="startLights1" class="lights">
-        <div></div>
-        <div></div>
-      </div>
-      <div id="startLights2" class="lights">
-        <div></div>
-        <div></div>
-      </div>
-      <div id="startLights3" class="lights">
-        <div></div>
-        <div></div>
-      </div>
-      <div id="startLights4" class="lights">
-        <div></div>
-        <div></div>
-      </div>
-  </div>
-<div id="engine">engine on</div>
-  <div id="track" class="position">
-    <div id="lane" class="pops">
 
-        <div id="racecar" class="pops"></div>
-        <div id="preStage" class="go pops"></div>
-        <div id="staged" class="go pops"></div>
-        <div id="start" class="pops"></div>
-        <div id="finish" class="go pops"></div>
-      
-      </div>
-  </div>
-</div>  
 
-<script src="bundle.js"></script>
-</body>
-</html>
+
+
+
+
+
+
+
+
+

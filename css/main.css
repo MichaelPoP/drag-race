@@ -1,88 +1,233 @@
-/******* GENERAL ******/
-.center {
-  margin: 0 auto;
+  /*********  FOR ALL ************/
+
+.position {
+    margin: 0 auto;
 }
 
-.abs {
+.pops {
   position: absolute;
 }
+body {
+  background-image: url("../images/tronBack.jpg");
+}
+#engine {
+color: transparent;
+display: inline-block;
 
-/******* XMAS TREE ******/
-#christmas-tree {
-  margin: 20px auto;
+}
+#engine.on {
+  border-radius: 30px;
+  background: rgba(24, 184, 61, .7);
   width: 70px;
-  background: black;
+  height: 20px;
   color: white;
   text-align: center;
-  font-size: 0.9em;
-  border: 4px solid #ccc;
-}
-
-.lights {
-  border-bottom: 1px solid #ccc;
-}
-
-.lights div {
+  font-variant: small-caps;
+  font-size: 15px;
+  line-height: 25px;
+  box-shadow: 2px 2px 12px 2px #18B83D, -2px -2px 12px 2px #18B83D;
   display: inline-block;
-  background: white;
+}
+p {
+  font-family: monospace;
+  color: white;
+  font-variant: small-caps;
 }
 
-#pre-stage div, #stage div {
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-}
 
-#pre-stage.on div {
-  background: yellow;
-}
+/*********  LIGHTS/ XMAS TREE ************/
+/** transform-test: (deg 90); to turn text sideways ******/
+/**look for svg images  ****/
 
-#start-lights div {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
+#xtree {
+  margin: 15px auto;
+  width: 220px;
+  background:rgba(2, 15, 33, .7);
+  color: white;
+  text-align: center;
+  font-size: 2.2em;
+  border: 12px double rgba(19, 26, 33, .7);
+  border-style: groove;
 }
-
-/******* RACETRACK ******/
-#racetrack {
-  background: green;
-  width: 90%;
-  height: 88px;
+.plights {
+  border-bottom: 7px solid #0E453C;
+  border-top: 7px double #0C353F;
+}
+.lights {
+  border-bottom: 7px solid #0E453C;
+  border-top: 7px double #0C353F;
+}
+.plights div, .lights div  {
+  display: inline-block;
+  background: rgba(19, 26, 33, .9);
+}
+/**** OFF STATE ******/
+#preLights div  {
+  width: 25px;
+  height: 22px;
+  border-radius: 9px;
+  background: rgba(10, 15, 17);
   border: 2px solid black;
+  border-style: groove;
+  color: black;
+  font-size: 33px;
+  vertical-align: middle;
+  line-height: 27px;
+  letter-spacing: -0.9px;
+  background: #FF001E;
+  box-shadow: 2px 2px 12px 3px #FF001E, -2px -2px 12px 3px #FF001E;
+  }
+span {
+  text-shadow: 0 0 3px #9EB0CE, 0 0 5px #E3EAE6;
+  font-variant: small-caps;
+}
+#stageLights div {
+  width: 25px;
+  height: 22px;
+  border-radius: 9px;
+  border: 2px solid black;
+  font-size: 33px;
+  color: black;
+  font-weight: lighter;
+  vertical-align: middle;
+  line-height: 27px;
+  letter-spacing: -0.9px;
+  background: #07211D;
+}
+#startLights div, #startLights1 div, #startLights2 div, #startLights3 div, #startLights4 div {
+  width: 42px;
+  height: 27px;
+  vertical-align: middle;
+  background: rgba(19, 26, 33, .9);
+  border-radius: 25px;
+  border:2px dotted rgba(13, 66, 66, .9);
+  border-style: inset;
+  margin-bottom: 7px;
+  
+}
+/*********   ON STATE   **********/
+#preLights.on div {
+  background: #FF001E;
+  font-size: 36px;
+  font-weight: lighter;
+  vertical-align: middle;
+  line-height: 27px;
+  letter-spacing: -0.9px;
+  box-shadow: 2px 2px 12px 3px #FF001E, -2px -2px 12px 3px #FF001E;
+
 }
 
-#strip {
-  width: inherit;
-  height: 88px;
+#stageLights.on div {
+  width: 25px;
+  height: 22px;
+  border-radius: 9px;
+  border: 2px solid black;
+  text-shadow: 0 0 3px #9EB0CE, 0 0 5px #E3EAE6;
+  font-size: 33px;
+  color: black;
+  font-weight: lighter;
+  vertical-align: middle;
+  line-height: 27px;
+  letter-spacing: -0.9px;
+  box-shadow: 2px 2px 12px 3px #BADA55, -2px -2px 12px 3px #BADA55;
+  background: #FFFF00;
+
 }
 
-.place {
-  height: 88px;
+#startLights.on div, #startLights1.on div, #startLights2.on div, #startLights3.on div, #startLights4.on div{
+   background: #05F721;
+   box-shadow: 2px 2px 12px 3px #05F721, -2px -2px 12px 3px #05F721;
+}
+ 
+/*************  RACETRACK  ***************/
+
+.go {
+  height: 170px;
   width: 10px;
-  min-height: 88px;
+  min-height: 170px;
   min-width: 10px;
 }
 
-#pre-staged {
-  left: 39px;
-  background: yellow;
+#track {
+  background: rgba(19, 26, 33, .9);
+  width: 90%;
+  height: 170px;
+  border: 6px double rgba(39, 104, 94, .5);
+  border-style: inset;
+  max-width: 800px;
+  min-width: 770px;
+}
+.position:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 110px;
+    border-top: 50px double transparent;
+    border-bottom: 80px double rgba(161, 201, 195, .5);
+    border-left: 50px double transparent;
+    border-right: 50px double rgba(161, 201, 195, .5);
+    position: absolute;
+    bottom: -18px;
+    left: 99px;
+    box-shadow: 6px 6px 6px 1px #FFFFFF;
+}
+.position:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 110px;
+    border-top: 50px double transparent;
+    border-bottom: 80px double rgba(161, 201, 195, .5);
+    border-left: 50px double rgba(161, 201, 195, .5);
+    border-right: 50px double transparent;
+    position: absolute;
+    bottom: -18px;
+    right:99px;
+    box-shadow: -6px 6px 6px 1px #FFFFFF;
 }
 
-#finish {
-  right: 49px;
-  background: white;
+#strip {
+
+  width: inherit;
+  height: 188px;
+}
+
+#racecar{
+  left: -10px;
+  background: url(../images/tronDrag.png) no-repeat;
+  background-size: 88px 64px;
+  width: 88px;
+  height: 67px;
+  top: 20px;
+  z-index: 100;
+}
+
+
+#preStage {
+  left: 70px;
+  background: #FFFFFF;
 }
 
 #staged {
-  left: 93px;
-  background: yellow;
+  left: 140px;
+  background: #FFFFFF;
 }
 
-#dragster {
-  background: url(../images/mario.png) no-repeat;
-  background-size: 39px 44px;
-  width: 39px;
-  height: 44px;
-  top: 20px;
-  z-index: 100;
+#start {
+
+}
+#container {
+  position:center;
+  background: black;
+  height: 700px;
+  width: 820px;
+  border:1px solid black;
+}
+#finish {
+  float: right;
+  width:40px;
+  right: -720px;
+  background: #FFFFFF;
 }
